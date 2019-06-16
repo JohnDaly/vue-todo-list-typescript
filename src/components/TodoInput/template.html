@@ -1,0 +1,15 @@
+<b-field>
+    <!-- The input field for adding a new todo to the list -->
+    <b-input
+        v-model='newItem'
+        expanded
+        @keyup.native.enter='addItem'
+    />
+
+    <!-- A button that will add the todo to the list -->
+    <p class='control'>
+        <button class='button is-primary' @click='addItem'>
+            Add
+        </button>
+    </p>
+</b-field>

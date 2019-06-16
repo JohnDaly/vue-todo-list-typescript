@@ -2,7 +2,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 // Internal Dependencies
-import Checklist from './components/Checklist/Checklist.vue';
+import Checklist from '@/components/Checklist/index.vue';
 
 @Component({
   components: { Checklist },

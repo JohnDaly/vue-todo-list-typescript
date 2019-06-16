@@ -1,7 +1,10 @@
+// External Dependencies
 import Vue from 'vue';
 import Buefy from 'buefy';
-import App from './App.vue';
 import 'buefy/dist/buefy.css';
+
+// Internal Dependencies
+import App from './containers/App/index.vue';
 
 Vue.use(Buefy);
 

@@ -1,0 +1,32 @@
+<b-field>
+    <!-- A checkbox to toggle whether or not the todo is complete -->
+    <b-checkbox v-model='itemChecked' />
+
+    <!-- Shows the text for a todo that is not being edited -->
+    <span
+        class='item-static'
+        :class="{'item-checked': itemChecked}"
+        v-show='!editingItem'
+        @dblclick='editItem'
+    >
+        {{itemTitleDone}}
+    </span>
+    
+    <!-- The input field for when a todo is being edited -->
+    <b-input
+        v-model='itemTitleEdit'
+        v-show='editingItem'
+        :disabled='itemChecked'
+        @blur="doneEdit"
+        @keyup.native.enter="doneEdit"
+        @keyup.native.esc="cancelEdit"
+        expanded
+    />
+    
+    <!-- The button to remove todos from the list -->
+    <p class='control'>
+        <button class='button is-danger' @click='deleteItem'>
+            <b-icon icon='close' />
+        </button>
+    </p>
+</b-field>

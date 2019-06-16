@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import Checklist from '@/components/Checklist.vue';
+import Checklist from '@/components/index.vue';
 
 describe('Checklist.vue', () => {
   it('should render properly', () => {
