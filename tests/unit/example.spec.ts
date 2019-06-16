@@ -1,12 +1,9 @@
 import { shallowMount } from '@vue/test-utils';
-import HelloWorld from '@/components/HelloWorld.vue';
+import Checklist from '@/components/Checklist.vue';
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message';
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
-    });
-    expect(wrapper.text()).toMatch(msg);
+describe('Checklist.vue', () => {
+  it('should render properly', () => {
+    const wrapper = shallowMount(Checklist, {});
+    expect(wrapper.text()).toMatch('Checklist');
   });
 });
