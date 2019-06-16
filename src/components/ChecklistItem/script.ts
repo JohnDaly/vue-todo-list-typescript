@@ -2,7 +2,7 @@
 import { Component, Vue, Prop, Emit, Watch } from 'vue-property-decorator';
 
 // Internal Dependencies
-import { ChecklistTodo } from '../Checklist/script';
+import { ChecklistTodo } from '@/components/Checklist/script';
 
 @Component
 export default class ChecklistItem extends Vue {

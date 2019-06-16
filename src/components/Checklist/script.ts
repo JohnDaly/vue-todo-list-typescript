@@ -2,8 +2,8 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
 // Internal Dependencies
-import ChecklistItem from '../ChecklistItem/index.vue';
-import TodoInput from '../TodoInput/index.vue';
+import ChecklistItem from '@/components/ChecklistItem/index.vue';
+import TodoInput from '@/components/TodoInput/index.vue';
 
 export interface ChecklistTodo {
     key: string;
@@ -34,6 +34,9 @@ export default class Checklist extends Vue {
      * and adds it to the checklistMap
      */
     addItem(newItem: string) {
+        // If the new item is empty, return
+        if (newItem === '') { return; }
+
         const listItems = this.checklistItems;
         const listLength = listItems.length;
         const key = `${listLength + 1}_${newItem}`;

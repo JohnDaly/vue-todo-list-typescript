@@ -4,7 +4,7 @@ import Buefy from 'buefy';
 import 'buefy/dist/buefy.css';
 
 // Internal Dependencies
-import App from './containers/App/index.vue';
+import App from '@/containers/App/index.vue';
 
 Vue.use(Buefy);
 
