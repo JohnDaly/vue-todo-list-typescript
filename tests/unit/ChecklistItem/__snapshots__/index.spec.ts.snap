@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChecklistItem.vue should render properly 1`] = `
+<b-field-stub addons="true">
+  <b-checkbox-stub truevalue="true"></b-checkbox-stub> <span class="item-static">
+
+    </span>
+  <b-input-stub expanded="true" usehtml5validation="true" type="text" hascounter="true" customclass="" style="display: none;"></b-input-stub>
+  <p class="control"><button class="button is-danger">
+      <b-icon-stub icon="close"></b-icon-stub>
+    </button></p>
+</b-field-stub>
+`;

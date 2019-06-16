@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoInput.vue should render properly 1`] = `
+<b-field-stub addons="true">
+  <b-input-stub expanded="true" usehtml5validation="true" value="" type="text" hascounter="true" customclass=""></b-input-stub>
+  <p class="control"><button disabled="disabled" class="button is-primary">
+      Add
+    </button></p>
+</b-field-stub>
+`;

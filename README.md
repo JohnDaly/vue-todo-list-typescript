@@ -1,5 +1,7 @@
 # vue-todo-list
 
+A sample Vue.js TypeScript project, based on a [blog post](https://meshstudio.io/blog/2018-03-01-readable-vue-components/) I wrote.
+
 ## Project setup
 ```
 yarn install

@@ -33,5 +33,8 @@ module.exports = {
     'ts-jest': {
       babelConfig: true
     }
-  }
+  },
+  setupFiles: [
+      '<rootDir>tests/unit/testSetup.ts'
+    ]
 }
